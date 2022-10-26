@@ -1,0 +1,51 @@
+/*
+. classe
+*/
+.classe{
+    color: blue;
+}
+
+.bordo-sotto{
+
+    border-bottom: 1px solid black;
+}
+
+.prorita-rosso{
+
+    color: red;
+}
+
+.prorita-rosso > div{
+
+    color: red;
+}
+
+.prorita-rosso div{
+
+    color: red;
+}
+
+.sfondo{
+    background-color: azure;
+}
+
+.testo{
+
+}
+
+
+/*
+# id
+*/
+
+
+/*
+
+id + class + class
+
+*/
+
+#test.classe1.class2{
+
+
+}
