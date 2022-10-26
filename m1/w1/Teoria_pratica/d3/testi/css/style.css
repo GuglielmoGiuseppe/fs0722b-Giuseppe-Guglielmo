@@ -1,0 +1,19 @@
+
+:root{
+
+    font-size: 25px;
+    font-size: 3vh; /* */
+}
+#p1{
+    font-size: 16px;
+}
+#p2{
+    font-size: 1rem; /* 1rem, equivale al valore orginale del font*/
+}
+
+#p3{
+    font-size: 20px;
+}
+#p3 span{
+    font-size: 1em; /* 1rem, equivale al valore orginale del font*/
+}

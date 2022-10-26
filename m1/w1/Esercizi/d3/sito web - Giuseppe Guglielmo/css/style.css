@@ -1,0 +1,104 @@
+
+#logo{
+    color: aqua;
+    text-align: center;
+    margin: 20px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+src: url('../font/Roboto-Bold.ttf') format('truetype');
+}
+#line-box{
+    text-align: center;
+    background-color: rgb(255, 216, 119);
+    height: 1px;
+}
+
+#box-text{
+    text-align: center;
+    background-color: rgb(253, 251, 241);
+    height: 50px;
+    padding: 4px;
+}
+
+#text-botton-logo{
+    text-align: center;
+    color: darkgreen;
+    padding: -20px;
+}
+
+#hr-divisor{
+    color: rgb(11, 224, 125);
+}
+
+#main-h1{
+    font-family: myFirstFont;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    font-weight: bold;
+    padding: 15px;
+}
+
+#sub-text{
+    padding: 10px;
+}
+
+.center{
+    text-align: center; 
+}
+
+#image{
+    filter: drop-shadow(5px 4px 4px #00000046);
+    border-radius: 10px;
+    padding: -80px;
+}
+
+#text-img{
+    text-align: center;
+    color: rgb(196, 193, 193);
+}
+
+#vercial-line{
+    border: 0;
+    margin: 0;
+    border-left: 5px solid blue;
+    height: 200px;
+    float: left;
+}
+
+.position-left{
+    float: left;
+    position: relative;
+    right: -18%;
+}
+
+#-position{
+margin: -10;
+}
+
+#orange-Text{
+    text-align: left;
+    color: orangered;
+    font-weight: bold;
+}
+
+li{
+    margin: 10px;
+}
+
+.box{
+    width: 500px;
+    border: 1px solid rgba(147, 222, 252, 0.308);
+}
+
+#smooth-left{
+    float: left;
+    position: relative;
+    right: -8%;
+    
+}
+
+#color-link{
+    color: aqua;
+}
