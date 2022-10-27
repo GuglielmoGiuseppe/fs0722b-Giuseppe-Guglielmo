@@ -4,8 +4,19 @@
     font-size: 25px;
     font-size: 3vh; /* */
 }
+
+@font-face{
+    font-family: fontPersonale; /* valore index che viene assegnato*/
+    src: url('../font/LEMONMILK-Bold.otf') format('truetype'); /*perconrso del fonts/
+}
+
+body{
+background-color: antiquewhite;
+}
+
 #p1{
     font-size: 16px;
+    font-family: fontPersonale;
 }
 #p2{
     font-size: 1rem; /* 1rem, equivale al valore orginale del font*/

@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 #logo{
     color: aqua;
@@ -68,9 +72,10 @@ src: url('../font/Roboto-Bold.ttf') format('truetype');
 }
 
 .position-left{
-    float: left;
-    position: relative;
-    right: -18%;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #-position{
@@ -98,7 +103,23 @@ li{
     right: -8%;
     
 }
-
 #color-link{
     color: aqua;
+}
+
+
+.box-section{
+    display: block;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2-d{
+    float: none;
+    margin-left: 10px;
+}
+
+.warp{
+    width: 100%;
 }

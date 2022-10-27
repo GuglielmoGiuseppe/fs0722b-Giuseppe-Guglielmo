@@ -1,0 +1,35 @@
+.primo-p + span{
+    color: aquamarine;
+}
+
+input [type="text"]{
+    color: aliceblue;
+}
+
+input [type="text"]:focus{
+    color: red;
+}
+
+input [type="Checkbox"]:checked +div{
+    color: rgb(34, 185, 60);
+}
+
+table tr:nth-of-type(1){
+    background-color: aquamarine;
+}
+
+table tr:nth-of-type(odd){ /* uno si, uno no*/
+    background-color: aquamarine;
+}
+
+table tr:nth-of-type td:hover{ /*se il mouse passa */
+    color: aqua;
+    transition: 0.5s;
+}
+
+table tr:last-of-type td::after{ /*se il mouse passa */
+    content:">";
+}
+table tr:last-of-type td::before{ /*se il mouse passa */
+    content:"<";;
+}
