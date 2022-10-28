@@ -1,0 +1,303 @@
+/* Your styles here */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #393d41;
+}
+
+a{
+    font-family: 'Montserrat';
+}
+
+h3{
+    color: #25a2c3;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    display: block;
+    color: #393d41;
+    text-align: center;
+}
+
+
+
+
+h1{
+    color: #25a2c3;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.banner-img{
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70px;
+}
+
+.block-1{
+    text-align: center;
+    height: 370px;
+    width: 100%;
+}
+
+.block-1 h1{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.block-1 p{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.img-header {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
+
+.logo-img{
+    padding: 20px;
+}
+
+.button-start{
+    background-color: #f04c2f;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px; 
+    margin: 0 auto;
+
+}
+
+.button-start div{
+    margin-top: 1px;
+    padding: 15px;
+}
+
+.button-start div a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* MAIN */
+
+.box-section{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 45px;
+    height: 300px;
+    width: 100%;
+}
+
+.box-text{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+
+}
+
+.box-text h3{
+    padding-bottom: 20px;
+}
+
+
+.box-text p{
+    line-height: 28px;
+}
+.box-img{
+    text-align: center;
+    background-color: white;
+}
+
+.image-notebook{
+    border-radius: 360px;
+    height: 200px;
+}
+
+.img-dividor{
+    width: 100%;
+    height: 230px;
+    background-color: #e22d0e;
+}
+
+#container-text{
+    padding: 20px;
+}
+
+#container-text p{
+    line-height: 22px;
+    font-style: italic;
+    color: white;
+    font-weight: 100;
+}
+
+#sub-text{
+    padding: 30px;
+}
+
+#sub-text h3{
+    color: white;
+    font-weight: 100;
+}
+
+#sub-text p{
+    padding: 30px;
+    font-style: normal;
+    margin-top: -25px;
+    font-size: 14px;
+}
+
+.container-article{
+   height: 100%;
+   width: 100%;
+   margin-top: 45px;
+   margin-right: 15px;
+}
+
+.design-article{
+    height: 290px;
+    width: 280px;
+    background-color: #ffffff;
+    border: 1px solid #dee1e3;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+
+.divisor-article{
+    height: 25px;
+}
+
+.image-article{
+    height: 90%;
+    width: 90%;
+}
+
+#img-source-1{
+    background-image: url('/images/foto1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    width: 100%;
+    height: 222px;
+}
+
+#img-source-2{
+    background-image: url('/images/foto2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    width: 100%;
+    height: 222px;
+}
+
+#img-source-3{
+    background-image: url('/images/foto3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    width: 100%;
+    height: 222px;
+}
+
+
+
+.design-article h3{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.design-article p{
+    line-height: 28px;
+}
+
+.divisor{
+    height: 25px;
+}
+
+
+/* FOOTER */
+
+.box-footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 270px;
+    background-color: #25a2c3;
+}
+
+.box-footer a{
+    font-family: 'Open Sans';
+    color: #c8e7f0;
+    font-style: normal;
+    
+}
+
+.box-footer p{
+    font-family: 'Open Sans';
+    color: #c8e7f0;
+    font-style: normal;
+}
+
+.text-footer{
+    padding: 1px;
+    text-align: center;
+}
+
+.box-footer h1{
+    color: white;
+}
+
+.text-footer-address{
+   text-align: center; 
+   margin: 8px;
+}
+
+.line-footer{
+
+    background-color: #c8e7f0;
+    height: 1px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#copyright-text{
+    margin: 25px;
+}
