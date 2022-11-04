@@ -4,8 +4,14 @@ var checkFigure = false;
 function ApplicaNumero(button){
     let array = [];
     let simbol =  ['+', '-', '/', '*', '.' ];
+    let valueIdex = button.getAttribute("data-value");
+    let outputValue = document.getElementById("output-bar");
+    let lastValue = outputValue.value.substr(outputValue.value.length-1);
+    if((outputValue.value.length == 0 && valueIdex!="-") || (isSymbol(lastValue) && isSymbol(valueIdex))){
+        return;
+    }
 
-    let valueIdex = button.getAttribute("data-value")
+
     let docu = document.getElementById('output-bar').value += valueIdex; 
     let counter = docu;
     console.log(array);
@@ -22,8 +28,6 @@ function total()
         numeri.value = '';
     else if(numeri.value == 'infinity')
         numeri.value = '';
-
-        console.log(numeri.value);
 }
 
 function Reset()
@@ -32,3 +36,8 @@ function Reset()
     reset.value = '';
 }
 
+function isSymbol(input){
+    if(input == "+" || input=="-" || input=="*" || input=="/" || input=="."){
+        return true;
+    }
+}
