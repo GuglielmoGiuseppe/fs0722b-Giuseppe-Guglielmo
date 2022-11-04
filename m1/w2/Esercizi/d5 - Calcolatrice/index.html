@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Calcolatrice</title>
+</head>
+<body>
+    <audio>
+        <source src="/audio/mouse_over.mp3"></source>
+    </audio>
+
+    <div class="box-container">
+        <div class="box-header" >
+            <div class="box-number">
+                <input id="output-bar" type="text" value="" placeholder="0">
+            </div>
+        </div>
+        <div class="box-container-number">
+            <div class="block-button">
+                <div data-value="7" id="button-7" class="button-para" onclick="ApplicaNumero(this)"><p>7</p></div>
+                <div data-value="8" id="button-8" class="button-para" onclick="ApplicaNumero(this)"><p>8</p></div>
+                <div data-value="9" id="button-9" class="button-para" onclick="ApplicaNumero(this)"><p>9</p></div>
+                <div data-value="/" id="button-divison" class="button-para" onclick="ApplicaNumero(this)"><p>/</p></div>
+            </div>
+            <div class="block-button">
+                <div data-value="4" id="button-4" class="button-para" onclick="ApplicaNumero(this)"><p>4</p></div>
+                <div data-value="5" id="button-5" class="button-para" onclick="ApplicaNumero(this)"><p>5</p></div>
+                <div data-value="6" id="button-6" class="button-para"  onclick="ApplicaNumero(this)"><p>6</p></div>
+                <div data-value="*" id="button-multipler" class="button-para" onclick="ApplicaNumero(this)"><p>X</p></div>
+            </div>
+            <div class="block-button">
+                <div data-value="1" id="button-7" class="button-para" onclick="ApplicaNumero(this)"><p>1</p></div>
+                <div data-value="2" id="button-8" class="button-para" onclick="ApplicaNumero(this)"><p>2</p></div>
+                <div data-value="3" id="button-9" class="button-para"  onclick="ApplicaNumero(this)"><p>3</p></div>
+                <div data-value="-" id="button-sot" class="button-para" onclick="ApplicaNumero(this)"><p>-</p></div>
+            </div>
+            <div class="block-button">
+                <div data-value="Reset" id="button-7" class="button-para" onclick="Reset()"><p>C</p></div>
+                <div data-value="0" id="button-8" class="button-para" onclick="ApplicaNumero(this)"><p>0</p></div>
+                <div data-value="." id="button-9" class="button-para"  onclick="ApplicaNumero(this)"><p>.</p></div>
+                <div data-value="+" id="button-add" class="button-para" onclick="ApplicaNumero(this)"><p>+</p></div>
+            </div>
+        </div>
+        <div class="box-container-button-equal">
+            <div id="button-equal" onclick="total()"><p>=</p></div>
+        </div>
+        <div class="divisor">
+        </div>
+    </div>
+
+    <script src="/js/data.js" ></script>
+</body>
+</html>

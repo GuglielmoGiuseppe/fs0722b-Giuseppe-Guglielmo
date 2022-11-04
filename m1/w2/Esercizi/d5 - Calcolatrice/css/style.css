@@ -1,0 +1,125 @@
+body{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    background-position: center;
+}
+
+.box-container{
+    margin: 0 auto;
+    height: 100%;
+    width: 350px;
+    background-color: aliceblue;
+    margin-top: 150px;
+    border-radius: 13px;
+    box-shadow: 4px 4px #00000021;
+    margin-bottom: 150px;
+}
+
+.box-header{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.box-number{
+    padding-top: 17px;
+    text-align: center;
+}
+
+#output-bar{
+    font-family: 'Roboto';
+    height: 40px;
+    font-size: 32px;
+    text-align: right;
+    width: 95%;
+    color: #ffffff;
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    pointer-events:none;
+}
+
+.box-container-number{
+    /*border: 1px solid rgb(255, 0, 0);*/
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 100%;
+    width: 100%;
+}
+
+.block-button{
+    display: inline-flex
+}
+
+.button-para{
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    border-radius: 5px;
+    box-shadow: 0px 4px #00000021;
+    
+    margin: 5px;
+}
+
+.button-para:hover{
+    border: 1px solid rgb(36, 151, 245);
+}
+.button-para p{
+    text-align: center;
+
+}
+
+.box-container-button-equal{
+    height: 60px;
+    background-color: #3a47d5;
+    margin: 5px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.divisor{
+    height: 5px;
+}
+
+#button-equal{
+    text-align: center;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    font-weight: 600;
+}
+
+#button-equal:hover{
+    border: 1px solid rgb(36, 151, 245);
+}
+
+#button-equal p{
+    font-size: 64px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+
+#button-divison{
+    background-color: #81e8d7;
+}
+
+#button-sot{
+    background-color: #81e8d7;
+}
+#button-add{
+    background-color: #81e8d7;
+}
+#button-multipler{
+    background-color: #81e8d7;
+}
+
+.box-container-button-equal{
+    background-color: #81e8d7;
+    box-shadow: 0px 4px #00000021;
+}
