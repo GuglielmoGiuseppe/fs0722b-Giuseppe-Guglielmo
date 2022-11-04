@@ -20,6 +20,10 @@ function total()
         numeri.value = '';
     else if(numeri.value == 'NaN')
         numeri.value = '';
+    else if(numeri.value == 'infinity')
+        numeri.value = '';
+
+        console.log(numeri.value);
 }
 
 function Reset()
