@@ -7,7 +7,7 @@ function ApplicaNumero(button){
     let valueIdex = button.getAttribute("data-value");
     let outputValue = document.getElementById("output-bar");
     let lastValue = outputValue.value.substr(outputValue.value.length-1);
-    if((outputValue.value.length == 0 && valueIdex!="-") || (isSymbol(lastValue) && isSymbol(valueIdex))){
+    if((isSymbol(lastValue) && isSymbol(valueIdex))){
         return;
     }
 
