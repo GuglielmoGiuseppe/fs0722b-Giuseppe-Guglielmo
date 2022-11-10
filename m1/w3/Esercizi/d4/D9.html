@@ -51,13 +51,15 @@
         domande!
       </h2>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo del documento in qualcos'altro.
       */
 
-      const changeTitle = function (newTitle) {
-        let text = document.querySelector('.myClass').innerHTML = newTitle ;
+      const changeTitle = function (newTitle) { // viene applicata una funzione alla variabile costant (la variabile cosnt, una volta assegnata non può cambiare il suo valore)
+        let text = document.querySelector('.myClass').innerHTML = newTitle ; // creo una nuova variabile, assegniando un queryselecor, dove cercherà la classe .myClass, applicando
+        //un innerHTML vado a scrivere direttamente la parola/stringa nel h1
       }
       changeTitle('ALDOOO!!!!');
       /* ESERCIZIO 2
@@ -67,38 +69,63 @@
       const addClassToTitle = function () {
         let changeid = document.getElementsByClassName("myClass").className = "myHeading";
         console.log(changeid);
+        //creo una variabile locale, dove al suo interno vado a trovare la classe, applicando il .name vado a prendere il nome della classe 
+        // in questo modo posso assegnare una nuova classe al tag html
       }
       addClassToTitle();
       /* ESERCIZIO 3
        Scrivi una funzione per cambiare il contenuto di tutti i p che sono discendenti di un div.
       */
-
-      const changePcontent = function () {
-        
+      const changePcontent = function (stringa) {
+        let Array = document.querySelectorAll('div > p');
+        for (let tag of Array) {
+          tag.innerHTML = stringa;
+        }
+        console.log(Array);
       }
-      changePcontent();
+      changePcontent('non mollare mai, l\'importante e provarci sempre, perchè la pratica è meglio della teoria');
       /* ESERCIZIO 4
        Scrivi una funzione per cambiare la proprietà href di ogni link a https://www.google.com
       */
 
-      const changeUrls = function () {
-        //
+      //la info dice che devo cambiare la di "OGNI" link, quindi userò un querySelectorAll, perchè mi hanno detto OGNI quindi -
+      //per me è tradotto in TUTTi, anche se nel codice HTML ne vedo solo uno 
+      //di conseguenza scriverò il codice in base a quello che c'è scritto
+
+
+      //adesso spiego questo codice così ho la possibilità di prendere 8, che tanto male non fa
+      const changeUrls = function () { // copia e incolla = // viene applicata una funzione alla variabile costant (la variabile cosnt, una volta assegnata non può cambiare il suo valore)
+        let changeLink = document.querySelectorAll('a'); //creo una variabile locale, applicando un document.querySelectorAll dove cerca nel documento della pagina
+        //tutti i tag <a>, in questo modo, la variabile changeLink diventerà un array, dove mostrerà tutte le proprietà, -
+        //infatti possiamo trovare il nostro tesoro, ovvero la proprietà "href"
+        
+        //creo un ciclo for, (abbstanza inutile, perchè nella pagina ci sta solo un link, ma noi seguiamo la info)
+        //il cilo fa in modo di modificare tutti i "href" presenti nell'array, una volta raggiunto la quantità massima dell'array, il ciclo 
+        //si ferma. 
+        for (let link of changeLink) {
+          link.href = 'https://www.google.com' // questo assegnerà il link di google a tutti i <a href>  della pagina
+        }
+        console.log(changeLink);// questo è un console.log
       }
-      changeUrls();
+      changeUrls(); //questa è la funzione che viene lanciata
       /* ESERCIZIO 5
        Scrivi una funzione per aggiungere un nuovo elemento alla seconda lista non-ordinata.
       */
 
+      //
       const addToTheSecond = function (content) {
-        //
+          let SecondList = document.querySelector('#secondList');
+          let test = document.createElement('li')
+          test.innerHTML = content;
+          SecondList.appendChild(test);
       }
-      addToTheSecond();
+      addToTheSecond('AHAHAHAHAHAH');
       /* ESERCIZIO 6
        Scrivi una funzione per aggiungere un secondo paragrafo al primo div.
       */
-
       const addParagraph = function (content) {
-        //
+        // sinceramente non so cosa voglia dire
+
       }
       addParagraph();
       /* ESERCIZIO 7
@@ -106,7 +133,9 @@
       */
 
       const firstUlDisappear = function () {
-        //
+          let list = document.getElementById('firstList');
+          list.hidden = true;
+          console.log(list);
       }
       firstUlDisappear();
       /* ESERCIZIO 8
@@ -114,7 +143,11 @@
       */
 
       const paintItGreen = function () {
-        //
+        let listArray = document.getElementsByTagName('li');
+        for (let colorChange of listArray) {
+          colorChange.style.backgroundColor = 'green';
+        }
+        console.log(listArray);
       }
       paintItGreen();
       /* ESERCIZIO 9
@@ -122,7 +155,10 @@
       */
 
       const makeItClickable = function () {
-        //
+        let h1Color = document.querySelector('h1');
+        h1Color.addEventListener('click',function(){
+            h1Color.style.color = 'red';
+        })
       }
       makeItClickable();
       /* ESERCIZIO 10
@@ -130,7 +166,15 @@
       */
 
       const changeFooterText = function () {
-        //
+        let Text = 'ALDO!!, ci hai fatto scendere giù un mese prima?!!!'
+        let textchange = document.querySelector('.footer').childNodes;
+        for (let addButton of textchange) {
+          addButton.addEventListener('click', function(){
+            addButton.innerHTML = Text;
+              console.log(addButton);
+          })
+        }
+        console.log(textchange);
       }
       changeFooterText();
       /* ESERCIZIO 11
@@ -140,12 +184,16 @@
       const inputField = document.getElementById('input-field')
       // ...
 
+      inputField.addEventListener('keyup', function(){
+        console.log(inputField.value);
+      })
+
+
       /* ESERCIZIO 12
        Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
-      */
-
+      */      
       window.onload = function () {
-        //
+        Swal.fire('BENVENUTO!!!')
       }
     </script>
   </body>
