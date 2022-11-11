@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="lista" ></div>
+    <button id="crea">Creazione</button>
+    <button id="crea">Creazione</button>
+
+    <script>
+        let crea = document.querySelector('#crea')
+        crea.addEventListener('click', function(){
+            let div = document.createElement('div');
+            let divText = document.createTextNode('Div creato');
+            //div.append(divText);
+            let span = document.createDocumentFragment('span')
+            let spanText = document.createTextNode('span figlio creato');
+            //div.innerHTML = 'Div creato';
+
+            span.append(spanText);
+            div.append(divText,span);
+            let lista = document.querySelector('#lista').append(div);
+
+            div.addEventListener('click', function(){
+                
+            })
+
+
+        })
+
+        let elimina = document.querySelector('#elimina');
+        elimina.addEventListener('click', function(){
+
+        })
+
+    </script>
+</body>
+</html>

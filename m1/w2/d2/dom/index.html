@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="testo" type="text">
+    <button onclick="saluta()" >Controlla se è pari</button>
+
+<script>
+
+    var panel = null;
+    var name = null;
+    var password = null;
+
+    function saluta()
+    {
+        /*
+        panel = prompt('lOGIN');
+        name = panel;
+        panel = prompt('Password');
+        password = panel;
+
+        console.log(name)
+        console.log(password)
+*/
+        let input = document.getElementById('testo');
+        console.log(input.value)
+
+        let result = input.value % 2 == 0;
+
+        if(result)
+            console.log('Pari')
+        else
+            console.log('dispari')
+
+        input.value = '';
+    }
+
+
+
+</script>
+
+</body>
+</html>

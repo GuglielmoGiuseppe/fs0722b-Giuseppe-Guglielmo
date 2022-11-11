@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Persona(_nome, _cognome){
+            this.nome = _nome;
+            this.cogonme = _cognome;
+            this.presentazione = function(){
+                console.log('ciao. mi chiamo: ' +  this.nome, this.cogonme)
+            }
+        }
+
+        let mario = new Persona('Mario', 'Rossi');
+        console.log(mario);
+        mario.presentazione();
+
+
+        Persona.prototype.anni = null;
+        mario.anni = 30;
+
+    </script>
+</body>
+</html>

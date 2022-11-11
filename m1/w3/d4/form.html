@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="myForm">
+    <div>
+        <input type="text" id="nome" placeholder="Nome">
+        <span></span>
+    </div>
+    <div>
+        <input type="text" id="cognome" placeholder="cognome">
+        <span></span>
+    </div>
+    <div>
+        <input type="email" id="cognome" placeholder="Email">
+        <span></span>
+    </div>
+    <div>
+        <input type="password" id="cognome" placeholder="password">
+        <span></span>
+    </div>
+
+    <button type="button"> Mostra/Nascondi</button>
+    <input type="submit" name="" id="invia">
+   
+</form>
+<script>
+
+    let form = document.getElementById('myForm');
+    form.addEventListener("submit", function(e){
+        e.preventDefault();// bòpcca funzionalità defoult
+        let valid = true;
+        let nome = document.getElementById('nome');
+        let cognome = document.getElementById('cognome');
+        let email = document.getElementById('email');
+        let password = document.getElementById('password');
+        //
+        if(!nome.value){
+            nome.nextElementSibling.textContent = '* Devi inserire il nome';
+            valid = false;
+        }
+        else{
+            nome.nextElementSibling.textContent = '';
+        }
+        //
+        if(valid){
+            console.log('form inviato')
+        }
+        //console.log('test');
+    })
+
+
+
+</script>
+</body>
+</html>

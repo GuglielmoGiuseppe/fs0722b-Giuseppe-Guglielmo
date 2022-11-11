@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form id="myForm">
+    <div>
+        <input type="text" data-error="Manca il nome" class="notEmpty" id="nome" placeholder="Nome">
+        <span></span>
+    </div>
+    <div>
+        <input type="text" class="notEmpty" id="cognome" placeholder="cognome">
+        <span></span>
+    </div>
+    <div>
+        <input type="email" class="notEmpty" id="cognome" placeholder="Email">
+        <span></span>
+    </div>
+    <div>
+        <input type="password" class="notEmpty"  id="cognome" placeholder="password">
+        <span></span>
+    </div>
+
+    <button type="button"> Mostra/Nascondi</button>
+    <input type="submit" name="" id="invia">
+   
+</form>
+<script>
+
+    let form = document.getElementById('myForm');
+    form.addEventListener("submit", function(e){
+        e.preventDefault();// bòpcca funzionalità defoult
+        let valid = true;
+        
+        let campi = document.querySelectorAll('.notEmpty')
+
+        for (let m of campi) {
+            let span = document.createElement('span'); 
+            if(!m.value){
+                let error = document.getAttribute('data-error');
+                nome.nextElementSibling.textContent = '* Devi inserire il nome' + error;
+                valid = false;
+            }
+            else
+            {
+                nome.nextElementSibling.textContent = '';
+            }
+        }
+
+        if(valid){
+            console.log('form inviato')
+        }
+        //console.log('test');
+    })
+
+
+
+</script>
+</body>
+</html>

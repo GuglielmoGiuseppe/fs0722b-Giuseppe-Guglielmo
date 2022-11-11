@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let animali = ['Tigre', 'Leone', 'Gatto', 'cane']
+
+        console.log(animali);
+        console.log(Array.isArray(animali));
+
+        console.log(animali[animali.length -1])
+
+        let numeri = [12,554,8767,232,123,542,23,551,231,452,342,523]
+        numeri.sort(function(a,b){
+            return a -b;
+        })
+        console.log(numeri)
+
+        //aggiungere o rimuovere alla fine
+
+        
+        numeri = [12,554,8767,232,123,542,23,551,231,452,342,523]
+        numeri.pop(); //rimuovi alal fine
+        numeri.push(); //aggiunge alla fine
+        numeri.unshift(); //aggiunge all'inizio
+        numeri.shift(); //rimuove all'inizio
+        numeri.map(); // modifica l'array
+
+//rimozione o sostituzione a partire da un index
+let start = 3;
+let quantità = 1;
+numeri.splice(start, +quantità)
+console.log(numeri);
+numeri.splice(2,1,888)
+
+function TrovaDistruggi(array,valore)
+{
+    let index = array.indexOf(valore)
+    array.splice(index, 1);
+    return array;
+}
+
+    numeri = [10,23,4,3,1412,23]
+
+
+    </script>
+</body>
+</html>
