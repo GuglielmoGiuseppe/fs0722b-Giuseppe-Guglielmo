@@ -153,6 +153,12 @@ aside h2 {
     text-transform: uppercase;
     margin-bottom: 1em;
 }
+
+#container-div{
+    background: none;
+    border: none;
+}
+
 aside div {
     background-color: #e3e3e3;
     border: 1px solid #c3c3c3;
@@ -207,7 +213,7 @@ footer a {
 
     header nav{
         margin: 25px;
-        margin-left: 5%;
+        margin-left: 0%;
     }
 
     header nav ul{
@@ -230,6 +236,43 @@ footer a {
         margin-bottom: 50px;
         margin-top: 50px;
         width: 70%;
+    }
+
+    iframe {
+        width: 500px;
+        height: 310px;
+        margin-bottom: 2em;
+        border-radius: 20px;
+
+    }
+
+    section{
+        display: inline-block;
+        width: 60%;
+        height: 310px;
+        border-radius: 15px;
+    }
+
+
+    aside div{
+        text-align: center;
+        display: flex;
+    }
+
+    aside p{
+        text-align: center;
+        display: block;
+    }
+
+    #container-div{
+        background: none;
+        border: none;
+    }
+
+    html {font-size: 100%;}
+
+    #container-frame-section{
+        display: flex;
     }
 }
 
