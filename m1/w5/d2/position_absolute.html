@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative{position: relative; width: 400px; height: 200px; border: 3px solid red;}
+        .absolute{position: absolute; width: 100px; height: 50px; border: 3px solid rgb(0, 38, 255); right: 0;}
+    </style>
+</head>
+<body>
+    <h2>position absolute</h2>
+    <p>un elemento che ha <code>position: absolute</code> si posiziona relativamente al suo ancestor (genitore piu vicino) </p>
+    <div class="relative">
+        questo div rosso ha position relative
+        <div class="absolute">
+            questo div rosso ha position absolute
+        </div> 
+    </div> 
+
+</body>
+</html>

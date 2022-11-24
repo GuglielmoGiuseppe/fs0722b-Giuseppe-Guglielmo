@@ -262,6 +262,7 @@ onlyLetters('I have 4 dogs');
 */
 
 function checkEmail(email) {
+
   var Simboli = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!Simboli.test(email)) {
       console.log('Please provide a valid email address');
@@ -439,8 +440,6 @@ searchByTitle('Avengers');
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
-
-
 
 
 function searchAndDivide(stringa){

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{display: grid;
+        grid-template-columns: [inizio-col] 10% [col-2] 15% [col-3] auto [col-3] 15% [col-5] 10% [fine-col];
+        grid-template-rows: [inizio-riga] 25% [riga-1-fine riga-2-inizio] 10% [fine-riga-2] auto [fine-tutto];
+            margin-bottom: 20px;
+        }
+        .container-2{
+            display: grid;
+            grid-template-columns: 15% repeat(3,25% [col-start]) 10%;
+            grid-template-rows: [inizio-riga] 25% [riga-1-fine riga-2-inizio] 10% [fine-riga-2] auto [fine-tutto];
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+
+    </div>
+</body>
+</html>

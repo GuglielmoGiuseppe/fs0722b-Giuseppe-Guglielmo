@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-mio{
+            margin: auto;
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            color: white;
+            animation: mymove 5s infinite ;
+        }
+
+        @keyframes mymove{
+            50%{transform: rotate(180deg);}
+        }
+
+        #box{
+            margin: 20px;
+            padding: 5px;
+            width: 400px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>Testo di prova</h2>
+    <p>testo di rotazione</p>
+    <div id="div-mio" >
+        <h1>Testo finto</h1>
+    </div>
+
+    <div id="box" >
+        <h1>Testo di rpova</h1>
+    </div>
+
+    <div id="box" >
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+    </div>
+</body>
+</html>

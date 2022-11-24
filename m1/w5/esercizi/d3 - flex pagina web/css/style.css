@@ -79,8 +79,8 @@ a {
 }
 
 .image-card{
-    background-position: center;
-    background-size: contain;
+    background-repeat: repeat;
+    height: 200px;
 }
 
 .testo{
