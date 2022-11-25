@@ -1,0 +1,373 @@
+body{font-family: 'Roboto', sans-serif;font-family: 'Spectral', serif;}
+
+/* ---------------- HEADER -------------*/
+
+
+
+.logo{
+    margin: 20px;
+    margin-left: 0;
+    height: 25px;
+}
+.nav-bar{
+    display: flex;
+    background: #ffc017;
+    justify-content: center;
+    justify-items: center;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar-change{
+    transition: 0.5s;
+    display: flex;
+    background: #ffffff;
+    justify-content: center;
+    justify-items: center;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar::after{
+    background-color: aliceblue;
+}
+
+.container-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 1150px;
+}
+.nav-bar-button{padding: 0; display: flex; align-items: center;}
+.nav-bar-button ul{display: flex; list-style-type: none; margin-top: 0; margin-bottom: 0;}
+.nav-bar-button ul li{padding-left: 10px; padding-right: 10px; line-height: 40px;}
+.nav-bar-button ul li a{color: #191919; text-decoration: none;}
+#button-start{
+    background-color: #191919;
+    color: white;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#button-start-change{
+    transition: 0.5s;
+    background-color: #51cb05;
+    color: white;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#button-start a{color: white;}
+
+.contianer-box-start{
+    display: flex;
+    justify-content: center;
+    background-color: #ffc017;
+    border-bottom: 1px solid #191919;
+    margin-bottom: 20px;
+}
+
+.header-img-text{
+    width: 1150px;
+    background-color: #ffc017;
+
+}
+.header-img-text .container-text{
+    margin-top: 50px;
+}
+
+.header-img-text .container-text h1{
+    font-size: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-img-text .container-text p{
+    margin: 10px;
+}
+
+.header-img-text .container-text button{
+    margin-top: 25px;
+    background-color: #191919;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 50px;
+    margin-bottom: 70px;
+}
+
+
+/* ------------ MAIN ---------*/
+
+/*TRADING USER */
+
+.text-tite-trader{
+display: flex;
+justify-content: center;
+}
+
+.container-trader-box{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.container-trader-article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+.container-article-style{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-article-style span{
+    color: #7c7c7c;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.container-article-style span p{
+    margin: 0;
+}
+
+.container-trader-text h2{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 330px;
+}
+
+.container-trader-data span{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #7c7c7c;
+}
+
+.user-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-name h3{
+    margin: 0;
+}
+.user-name > img{
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
+.user-relase p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 450px;
+}
+
+.ninckname-data h3{
+    font-size: 13px;
+}
+
+.user-relase-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: last baseline;
+}
+
+.user-relase-date p{
+    margin: 0;
+}
+
+.img-start{
+    height: 20px;
+    width: 20px;
+}
+
+.bookmark{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    float: left;
+}
+
+
+/* MAIN ARTICLE*/
+
+.color-main-article{
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.container-article-new{
+    width: max-content;
+    display: flex;
+    margin: 0 auto;
+    flex-direction:column;
+    margin-left: 0px;
+    margin-right: 100px;
+
+}
+
+.user-relase-date button{
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 50px;
+}
+
+.article-new-style{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: max-content;
+}
+.user-data h2{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 450px;
+}
+.container-info-news{
+    margin-right: 20px;
+}
+.container-img-articles{
+    height: 134px;
+    width: 200px;
+}
+
+.image-article{
+    height: 100%;
+}
+
+/*DISCOVER STICKER*/
+
+.discover-stick{
+    margin-left: 45px;
+    height: max-content;
+    position: sticky;
+    top: 8%;
+}
+
+.container-discover{
+    width: 360px;
+
+}
+
+.discover-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.container-tag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.tag-button-style{
+    border: 1px solid rgb(201, 201, 201);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.tag-button-style a{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+.mini-footer{
+    border-top: 1px solid rgba(165, 165, 165, 0.479);
+}
+.list-link ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.list-link li{
+    margin-right: 10px;
+}
+.list-link li a{
+    text-decoration: none;
+    color: #7c7c7c;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+/*FINE DISCOVERY*/
+
+@media only screen and (min-width: 1200px) {
+    .discover-stick{
+        margin-left: 10px;
+    }
+    .container-article-new{
+        margin-right: 10px;
+    }
+
+  }
+
+@media only screen and (max-width: 1180px) {
+.color-main-article{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.discover-stick{
+    margin-left:0px;
+    height: max-content;
+    position: relative;
+}
+.container-discover{
+   width: max-content;
+   margin-right: 0px;
+   margin: 0 auto;
+}
+
+.container-tag{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.container-article-new{
+    margin: 0 auto;
+}
+}
