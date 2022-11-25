@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
     <!--aggiungi link al reset.css -->
-    <title>Document</title>
+    <title>Medium</title>
 
 </head>
 
@@ -418,14 +418,14 @@
         {
             navig_bar.classList.remove("nav-bar")
             navig_bar.classList.add("nav-bar-change")
-
-            button_start.id.remove("button-start")
+            button_start.id = "button-start-change";
             activation = true;
         }
         else if(this.scrollY < 300 && activation)
         {
             navig_bar.classList.remove("nav-bar-change")
             navig_bar.classList.add("nav-bar")
+            button_start.id = "button-start";
             activation = false;
         }
     }   

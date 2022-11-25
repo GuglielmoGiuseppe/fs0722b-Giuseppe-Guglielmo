@@ -47,6 +47,7 @@ body{font-family: 'Roboto', sans-serif;font-family: 'Spectral', serif;}
 .nav-bar-button ul li{padding-left: 10px; padding-right: 10px; line-height: 40px;}
 .nav-bar-button ul li a{color: #191919; text-decoration: none;}
 #button-start{
+    transition: 0.5s;
     background-color: #191919;
     color: white;
     height: 40px;
@@ -56,6 +57,7 @@ body{font-family: 'Roboto', sans-serif;font-family: 'Spectral', serif;}
 }
 #button-start-change{
     transition: 0.5s;
+    border: 1px solid #51cb05;
     background-color: #51cb05;
     color: white;
     height: 40px;
@@ -137,7 +139,7 @@ justify-content: center;
 }
 
 .container-article-style span{
-    color: #7c7c7c;
+    color: #7c7c7c46;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
