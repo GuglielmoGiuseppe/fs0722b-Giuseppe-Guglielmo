@@ -76,6 +76,10 @@ body{font-family: 'Roboto', sans-serif;font-family: 'Spectral', serif;}
     margin-bottom: 20px;
 }
 
+.container-information{
+    margin-left: 10px;
+}
+
 .header-img-text{
     width: 1150px;
     background-color: #ffc017;
