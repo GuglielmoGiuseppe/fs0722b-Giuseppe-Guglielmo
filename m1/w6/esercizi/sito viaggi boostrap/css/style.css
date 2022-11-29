@@ -97,6 +97,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .container-box{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -113,7 +116,10 @@ footer{
     .container-off-del-giorno-1{
         display: flex;
         flex-direction: row;
-    } 
+    }
+    .container-box{
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1024px) {
