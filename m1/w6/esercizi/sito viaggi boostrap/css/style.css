@@ -87,11 +87,20 @@ footer{
     .container .row{
         flex-basis: 23%;
     }
+    .container-off-del-giorno-1{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 425px) {
+    #container-saldi .row .col{
+        padding-left: 0;
+        padding-right: 0;
+    }
     #container-saldi .row .col .card{
-        width: 10rem;
+        width: 12rem;
+        margin: 0 auto;
     }
     .container-off-del-giorno-1{
         display: flex;
@@ -99,6 +108,10 @@ footer{
     }
     .container-box{
         text-align: center;
+    }
+    #container-summer .row .col .card{
+        width: 12rem;
+        
     }
 }
 
@@ -136,11 +149,17 @@ footer{
 }
 
 @media screen and (min-width: 1200px) {
+    #container-saldi .row .col{
+        width: 19rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     #container-saldi .row .col .card{
-        width: 15rem;
+        width: 19rem;
+        margin-left: 1px;
     }
     #container-summer .row .col .card{
-        width: 20.01rem;
+        width: 25.5rem;
     }
     #last{
         display: initial;
