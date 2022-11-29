@@ -91,6 +91,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .container-box{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 425px) {
