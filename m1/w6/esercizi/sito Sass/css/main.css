@@ -1,0 +1,100 @@
+body {
+  background-color: blueviolet;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flexing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div ul {
+  list-style-type: none;
+  display: flex;
+}
+nav div ul li {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+nav div ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+nav div ul li a:hover {
+  color: orange;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.container div h2 {
+  font-size: 30px;
+}
+
+.container-button {
+  display: flex;
+}
+
+.text-conteiner {
+  max-width: 500px;
+}
+.text-conteiner div h1 {
+  font-size: 50px;
+}
+.text-conteiner div p {
+  line-height: 20px;
+}
+
+#button-1 {
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  margin: 8px;
+}
+#button-1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  outline-style: groove;
+}
+
+#button-2 {
+  background-color: rgb(255, 158, 30);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  margin: 8px;
+}
+#button-2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  outline-style: groove;
+}
+
+.container-img {
+  margin-top: 20px;
+  height: 400px;
+  width: 400px;
+}
+.container-img #image {
+  height: 90%;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */

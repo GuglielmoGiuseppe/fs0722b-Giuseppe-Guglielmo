@@ -1,0 +1,110 @@
+@import "variable";
+@import "button";
+
+body{
+    background-color: blueviolet;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flexing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                margin-left: 15px;
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    text-align: center;
+                    &:hover{
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container{
+    max-width: $max-width-container;
+    margin: 0 auto;
+    margin-top: 20px;
+    div{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
+.container-button{
+    display: flex;
+}
+
+.text-conteiner{
+    max-width: $max-conteiner-text-width;
+    div{
+        h1{
+            font-size: 50px;
+        }
+        p{
+            line-height: 20px;
+        }
+    }
+}
+
+#button-1
+{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    margin: $margin-value;
+    &:hover{
+        transform: scale($scaling);
+        cursor: pointer;
+        outline-style: groove;
+    }
+}
+
+#button-2{
+    background-color: rgb(255, 158, 30);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: white; 
+    margin: $margin-value;
+    &:hover{
+        transform: scale($scaling);
+        cursor: pointer;
+        outline-style: groove;
+    }
+}
+
+.container-img{
+    margin-top: 20px;
+    height: $height-img;
+    width: $height-img;
+    #image{
+        height: 90%;
+        border-radius: 10px;
+    }
+}
