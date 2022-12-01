@@ -1,0 +1,131 @@
+@import "mixin";
+@import "variabili";
+@import "media";
+
+*{
+    @include reset-document;
+}
+
+.border{
+    border: none;
+}
+
+nav{
+    @include Flexing-row;
+    background-color: rgb(27, 27, 27);
+    div{
+        @extend .border;
+        max-width: $max-width-container;
+        margin: $maring-link;
+        padding:$maring-link;
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                margin-left: $maring-link;
+                margin-right: $maring-link;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: $size-font;
+                }
+            }
+        }
+    }
+}
+
+.container-text{
+    max-width: $max-container-text;
+    margin-left: $padding-container;
+    margin-right: $padding-container;
+    @extend .border;
+    div{
+        @extend .border;
+        margin-top: $maring-link;
+    }
+    div:nth-child(3){
+        line-height: 25px;
+    }
+    div:nth-child(4){
+        line-height: 25px;
+    }
+    button{
+        padding: $sadbar-padding-item;
+        margin-top: $button-marigin;
+        margin-bottom: $button-marigin;
+        border: none;
+        background-color: orange;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-size: $button-font-size;
+        &:hover{
+            background-color: rgb(247, 194, 97);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.342);
+        }
+    }
+}
+
+.container-main-1{
+    div{
+        margin-top: $maring-text;
+    }
+    div:nth-child(3){
+        line-height: 25px;
+    }
+}
+
+main{
+    @include Flexing-row;
+    margin-top: $maring-main-top;
+    > div{
+        max-width: $max-width-container;
+        display: flex;
+    }
+}
+
+.sadbar{
+    margin-left: $sadbar-maring-left;
+    height: $sadbar-height;
+    width: $sadbar-width;
+    div{
+        padding: $sadbar-padding-item;
+        border-bottom-style:dotted;
+        border-color: rgb(170, 170, 170);
+        
+        .button-sadbar{
+            &:hover{
+                transition: 0.4s;
+                background-color: rgb(212, 212, 212);
+            }
+        }
+
+    }
+    .container-sadbar{
+        border: none;
+    }
+}
+
+div{
+    form{
+        > div:nth-child(1){
+            border: 1px solid rgb(212, 212, 212);
+            margin-top: $form-maring * 3;
+            border-radius: $form-border-radius;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.219);
+            div{
+                margin-left: $form-maring;
+                padding: 5px;
+                textarea{
+                    margin-bottom:$form-maring /1.5;
+                }
+            }
+        }
+    }
+
+}
+
+footer{
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+}

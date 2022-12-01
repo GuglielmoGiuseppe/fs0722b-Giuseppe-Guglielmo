@@ -1,0 +1,18 @@
+@mixin reset-document {
+    margin: $maring-reset;
+    padding: $padding-reset;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@mixin Flexing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flexing-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
