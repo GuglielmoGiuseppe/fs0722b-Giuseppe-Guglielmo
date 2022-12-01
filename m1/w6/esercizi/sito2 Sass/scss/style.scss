@@ -13,21 +13,32 @@
 nav{
     @include Flexing-row;
     background-color: rgb(27, 27, 27);
+    height: $nav-height;
     div{
         @extend .border;
         max-width: $max-width-container;
         margin: $maring-link;
         padding:$maring-link;
+        @include flexing-item-center;
         ul{
             display: flex;
             list-style-type: none;
             li{
-                margin-left: $maring-link;
-                margin-right: $maring-link;
+                margin-left: $maring-link /2;
+                margin-right: $maring-link/2;
+                padding: $padding-link-nav;
                 a{
                     text-decoration: none;
                     color: white;
                     font-size: $size-font;
+                }
+
+                &:hover{
+                    background-color: white;
+                    border-radius: $boreder-radius-link-nav;
+                    a{
+                        color: black;
+                    }
                 }
             }
         }
@@ -97,6 +108,7 @@ main{
             &:hover{
                 transition: 0.4s;
                 background-color: rgb(212, 212, 212);
+                cursor: pointer;
             }
         }
 
