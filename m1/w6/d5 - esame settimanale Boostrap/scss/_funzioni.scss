@@ -1,0 +1,16 @@
+@import "main";
+
+$color-dark: rgb(32, 32, 32);
+$template: dark;
+
+@function Theme(){
+    .bg-light{
+        @if $template == dark{
+            background-color: $color-dark;
+        }@else{
+    
+        }
+    }
+
+
+}

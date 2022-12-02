@@ -1,0 +1,171 @@
+@import "variabili";
+@import "mixin";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    @include Theme;
+}
+.color-navbar{
+    @include Theme;
+}
+header{
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+    @media screen and(max-width:991px) {
+        .container-link-list{
+            display: none;
+        }
+    }
+
+}
+
+.flexing{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.section{
+    p{
+        color: black;
+    }
+}
+nav{
+    margin: $maring-center;
+    z-index: 20;
+    position: relative;
+    .nav-link{
+        color: $nav-color-text-special;
+        li{
+            a{
+                font-size: $nav-social-size;
+            }
+        }
+
+    }
+    .navbar-brand{
+        color: white;
+    }
+
+    .collapse{
+        justify-content: space-between;
+    }
+    .activation{
+        color: white;
+     }
+     @media screen and(max-width: 991px){
+        .container-link{
+            display: none;
+        }
+     }
+     @media screen and(max-width:426px) {
+        .navbar-collapse{
+            display: flex;
+            justify-content: center;
+        }
+     }
+
+
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+#cards{
+    background-color: #F5f5f5;
+}
+.container{
+    padding: $padding-reset;
+    h1{
+        font-size: $font-size-h1;
+        color: $color-h1;
+    }
+    div{
+        button{
+            background-color: $color-botton;
+            border: none;
+            border-radius: $border-radius-button;
+            padding: $padding-button;
+            padding-right: $padding-button*2;
+            padding-left: $padding-button*2;
+            color: white;
+            &:hover{
+                transition: 0.5s;
+                background-color: $color-button-mouse-hover;
+            }
+        }
+    }
+    .partnership{
+        @media screen and(max-width: 426px) {
+            .row{
+                flex-direction: column;
+            }
+        }
+    }
+    .cards{
+        @media screen and(max-width: 426px) {
+            .row{
+                flex-direction: column;
+            }
+        }
+    }
+    .section{
+        @media screen and(max-width:426px) {
+            margin: $section-header-m;
+            text-align: center;
+        }
+    }
+
+}
+.col{
+    padding: $padding-reset;
+    i{
+        font-size: $icon-size;
+    }
+    img{
+        height: $img-size;
+    }
+    ul{
+        list-style-type: none;
+        padding: $padding-reset;
+        margin: $maring-reset;
+    }
+}
+
+.img-user{
+    border-radius: 100%;
+    height: $img-user;
+}
+
+.contaier-text{
+    max-width: $max-contaier-tex;
+    line-height: $line-heght-text;
+}
+
+footer{
+
+    @include Theme;
+    color: white;
+    li{
+        margin-top: $footer-list-link-mt;
+        margin-bottom: $footer-list-link-mt*2;
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: #dad6d6;
+            }
+        }
+    }
+
+    @media screen and(max-width: 425px) {
+        .row{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+/* general*/
+/* navbar variabili*/
+/*section navbar*/
+/*button*/
+/*Card*/
+/*Partnership*/
+/*feedback*/
+/**/
+/*THEME*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: black;
+}
+body .color-navbar {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+body body {
+  background-color: white;
+}
+body svg {
+  filter: none;
+}
+body footer {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+
+.color-navbar {
+  background-color: white;
+  color: black;
+}
+.color-navbar .color-navbar {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+.color-navbar body {
+  background-color: white;
+}
+.color-navbar svg {
+  filter: none;
+}
+.color-navbar footer {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+
+header {
+  background-image: url("../img/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
+}
+@media screen and (max-width: 991px) {
+  header .container-link-list {
+    display: none;
+  }
+}
+
+.flexing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section p {
+  color: black;
+}
+
+nav {
+  margin: 0 auto;
+  z-index: 20;
+  position: relative;
+}
+nav .nav-link {
+  color: orange;
+}
+nav .nav-link li a {
+  font-size: 60px;
+}
+nav .navbar-brand {
+  color: white;
+}
+nav .collapse {
+  justify-content: space-between;
+}
+nav .activation {
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  nav .container-link {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  nav .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+#cards {
+  background-color: #F5f5f5;
+}
+
+.container {
+  padding: 0;
+}
+.container h1 {
+  font-size: 50px;
+  color: rgb(48, 48, 48);
+}
+.container div button {
+  background-color: rgb(116, 57, 235);
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: white;
+}
+.container div button:hover {
+  transition: 0.5s;
+  background-color: rgb(148, 99, 245);
+}
+@media screen and (max-width: 426px) {
+  .container .partnership .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container .cards .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container .section {
+    margin: 15px;
+    text-align: center;
+  }
+}
+
+.col {
+  padding: 0;
+}
+.col i {
+  font-size: 80px;
+}
+.col img {
+  height: 80px;
+}
+.col ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.img-user {
+  border-radius: 100%;
+  height: 80px;
+}
+
+.contaier-text {
+  max-width: 800px;
+  line-height: 30px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  color: white;
+}
+footer .color-navbar {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+footer body {
+  background-color: white;
+}
+footer svg {
+  filter: none;
+}
+footer footer {
+  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+}
+footer li {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover {
+  color: #dad6d6;
+}
+@media screen and (max-width: 425px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

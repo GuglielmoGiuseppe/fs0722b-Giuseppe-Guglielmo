@@ -1,0 +1,57 @@
+@mixin ResetRoot {
+    margin: $maring-center;
+    padding: $padding-reset;
+}
+
+@mixin flexing-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexing-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flexing-beetwen {
+    justify-content: space-between;
+}
+
+@mixin BorderCheck {
+    border: 1px solid red;
+}
+
+
+@mixin Theme{
+    @if $template == dark{
+        background-color: $color-dark;
+        color: white;
+        #cards{
+            background-color: $color-dark-gray;
+        }
+        svg{
+            filter: invert(100%) sepia(0%) saturate(6278%) hue-rotate(294deg) brightness(109%) contrast(68%);
+        }
+        footer{
+            box-shadow: 0 0 60px rgba(204, 204, 204, 0.171);
+        }
+    }@else{
+        .color-navbar{
+            background-image: linear-gradient($standard-color);
+        }
+        background-color: white;
+        color: black;
+        body{
+            background-color: white;
+        }
+        svg{
+            filter:none;
+        }
+        footer{
+            background-image: linear-gradient($standard-color);
+        }
+    }
+}
