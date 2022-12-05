@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabella nomi</title>
+</head>
+<body>
+    <h2>Tabella</h2>
+    <div class="container">
+        <div>
+            <table id="_table">
+                <tbody id="bodyt">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Età</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container-form">
+            <form>
+                <input id="name" type="text" placeholder="Nome" required >
+                <input id="lastname" type="text" placeholder="Cognome"  required>
+                <input id="data" type="date" placeholder="Data di nascita" required>
+                <input id="Button" type="button" name="Invia" value="Invia">
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const NAME = document.getElementById("name"); 
+    const LASTNAME = document.getElementById("lastname"); 
+    const DATABORN = document.querySelector('input[type="date"]'); 
+    const BUTTON = document.getElementById("Button");
+    const TABLE_TR = document.querySelectorAll("tr");
+    var CurrantData = new Date();
+    var IndexTable = 1;
+    
+    BUTTON.addEventListener("click",function(){
+        if(NAME.value != "" && LASTNAME.value != "" && DATABORN.value != "undefined"){
+            TABLE_TR[IndexTable].innerHTML = `\n<td>${NAME.value + " " +  LASTNAME.value}</td>\n<td>${CalculateAge(DATABORN.value)}</td>\n`;
+            NAME.value = "";
+            LASTNAME.value = "";
+            DATABORN.value = "";
+            IndexTable++;
+        }
+        else{
+            CheckInput();
+        }
+    });
+
+    function CalculateAge(value){
+        var dob = new Date(value);
+        return CurrantData.getFullYear() - dob.getFullYear();
+    }
+
+    const CheckInput =  function(){
+        alert("devi inserire nome cognome e data di nascita");
+    }
+    
+</script>
+</html>
