@@ -40,8 +40,6 @@
     const TABLE = document.querySelector("tbody");
     var CurrantData = new Date();
     var IndexTable = 1;
-    console.log(TABLE_TR.length);
-    console.log(TABLE);
 
     BUTTON.addEventListener("click",function(){
         if(NAME.value != "" && LASTNAME.value != "" && DATABORN.value != "undefined")
@@ -63,8 +61,6 @@
         var row = TABLE.insertRow(TABLE.childElementCount);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
-        console.log(IndexTable);
-        console.log(TABLE.childElementCount);
     }
 
     function CalculateAge(value){
