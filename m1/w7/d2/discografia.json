@@ -1,0 +1,34 @@
+{
+    "Discografia": [
+
+        {
+            "album_1" : [
+                {
+                    "disco": "BELLAAAA",
+                    "disco1": "BELLAAAA",
+                    "disco2": "BELLAAAA"
+                }
+            ]
+        },
+        {
+            "album_2" : [
+                {
+                    "disco": "BELLAAAA",
+                    "disco1": "BELLAAAA",
+                    "disco2": "BELLAAAA"
+                }
+            ]
+        },
+        {
+            "album_3" : [
+                {
+                    "disco": "BELLAAAA",
+                    "disco1": "BELLAAAA",
+                    "disco2": "BELLAAAA"
+                }
+            ]
+        }
+    ]
+
+
+}
