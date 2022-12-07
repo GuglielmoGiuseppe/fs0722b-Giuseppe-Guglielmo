@@ -28,8 +28,11 @@ function CreationElement(conteiner, value)
     conteiner.append(createBox);
     createBox.innerHTML = `\n<div><h3 class="m-1">${value}</h3></div>\n` + `\n<div class="me-2"><div class="button-x"></div></div>\n`;
     const button =  createBox.querySelector(".button-x")
-    button.addEventListener("click", ()=>{
-        deleteData(value);
+    button.addEventListener("click", function(){
+        var valueSave = value;
+        console.log("asdas");
+        deleteData(valueSave);
+        createBox.remove();
     })
     console.log(button);
 }
@@ -41,10 +44,17 @@ function CreationElement(conteiner, value)
 window.addEventListener("load", check);
 
 function save(value){
-    localStorage.setItem('Task', value);
+    localStorage.setItem('Task', JSON.stringify(value));
 }
-function deleteData(value){
-    localStorage.removeItem("Task", value);
+function deleteData(valueKey){
+    for(var i in ContainerSave){
+        if(ContainerSave[i]==valueKey){
+            ContainerSave.splice(i,1);
+            break;
+        }
+    }
+    console.log(ContainerSave);
+    save(ContainerSave);
 }
 
 /** */
