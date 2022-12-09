@@ -29,6 +29,7 @@ function CreateCard(name, _email, linkimg, _subtitle, _info){
     info.className = "text-center mb-3 me-3 ms-3";
     email.href = "mailto:abc@example.com";
     email.className = "mb-4 text-center color-email";
+    
     card.setAttribute('style', 'width: 18rem;')
 
     userName.innerText = name;
