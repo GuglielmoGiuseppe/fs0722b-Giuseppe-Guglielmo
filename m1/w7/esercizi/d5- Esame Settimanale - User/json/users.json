@@ -1,0 +1,64 @@
+[
+  {
+    "username": "Osema",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Cacciatore",
+    "Info": "La sua arma preferita è il suo fedele Arco, tramandato da 250 generazioni. Sferra attacchi da 150km. I suoi Nemici l'ho chiamano: \"L'Uomo Nero\" ",
+    "gender": "Male",
+    "profileURL": "img/osema.png",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "Manuel",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Belloccio",
+    "Info": "Bello e stempiato come poche cose al mondo, con il suo fascio riesce a penetrare in qualsiasi buco",
+    "gender": "Male",
+    "profileURL": "img/manuel.jpg",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "Dino",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Gladiatore",
+    "Info": "Romano fino al midollo, ti prende a schiaffi con solo l'uso dei piedi",
+    "gender": "Male",
+    "profileURL": "img/dino.jpg",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "Daniel",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Master Rumeno",
+    "Info": "Mai guardarlo storto, potrebbe spaccare una bottiglia e minacciare la tua famiglia",
+    "gender": "Male",
+    "profileURL": "img/daniel.jpg",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "Giuseppe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Il Nano",
+    "Info": "con la sua altezza ha difficoltà a prendere oggetti da qualsiasi tipo di scaffale al supermercato, però è simpatico.",
+    "gender": "Male",
+    "profileURL": "img/giuseppe.jpg",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "Matteo",
+    "firstName": "John",
+    "lastName": "Doe",
+    "Title": "Il Caduto",
+    "Info": "Ci ha lasciato quasi un mese fa...cancellato sempre, ma noi ancora crediamo in lui, è stata ingiusta la sua caduta",
+    "gender": "Male",
+    "profileURL": "img/profile.jpg",
+    "email": "john.doe@example.com"
+  }
+]
+
+

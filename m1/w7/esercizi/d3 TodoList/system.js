@@ -1,7 +1,6 @@
 const FORM_STRING_VALUE = document.getElementById("input-list"); 
 const BUTTON = document.getElementById("button-add");
 const CONTAINER_LIST = document.querySelector("#container-list");
-var Index = 1;
 var ContainerSave = [];
 
 
@@ -57,7 +56,7 @@ function deleteData(valueKey){
     save(ContainerSave);
 }
 
-/** */
+/**/
 function check(valueKey){
     if(localStorage.getItem('Task',valueKey)){
         console.log("ciao");
