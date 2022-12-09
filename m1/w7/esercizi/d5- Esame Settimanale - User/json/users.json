@@ -14,7 +14,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "Title": "Belloccio",
-    "Info": "Bello e stempiato come poche cose al mondo, con il suo fascino riesce a penetrare in qualsiasi buco",
+    "Info": "Bello e stempiato come poche cose al mondo, con il suo fascino riesce a penetrare in qualsiasi buco.",
     "gender": "Male",
     "profileURL": "img/manuel.jpg",
     "email": "john.doe@example.com"
@@ -24,7 +24,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "Title": "Gladiatore",
-    "Info": "Romano fino al midollo, ti prende a schiaffi con solo l'uso dei piedi",
+    "Info": "Romano fino al midollo, ti prende a schiaffi con solo l'uso dei piedi.",
     "gender": "Male",
     "profileURL": "img/dino.jpg",
     "email": "john.doe@example.com"
@@ -34,7 +34,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "Title": "Master Rumeno",
-    "Info": "Mai guardarlo storto, potrebbe spaccare una bottiglia e minacciare la tua famiglia",
+    "Info": "Mai guardarlo storto, potrebbe spaccare una bottiglia e minacciare la tua famiglia.",
     "gender": "Male",
     "profileURL": "img/daniel.jpg",
     "email": "john.doe@example.com"
@@ -54,7 +54,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "Title": "Il Caduto",
-    "Info": "Ci ha lasciato quasi un mese fa...cancellato per sempre, ma noi ancora crediamo in lui, è stata ingiusta la sua caduta",
+    "Info": "Ci ha lasciato quasi un mese fa...cancellato per sempre, ma noi ancora crediamo in lui, è stata ingiusta la sua caduta.",
     "gender": "Male",
     "profileURL": "img/profile.jpg",
     "email": "john.doe@example.com"
