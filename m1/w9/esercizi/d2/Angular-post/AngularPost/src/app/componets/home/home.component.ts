@@ -7,6 +7,7 @@ import { Post } from 'src/app/interface/post.interface';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
   //ps: PostService;
   constructor(private ps: PostService) {
