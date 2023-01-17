@@ -1,0 +1,86 @@
+.box{
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+
+.mybox{
+    @extend .box;
+    font-size: 10px;
+}
+
+%box2 {
+    border: 1px solid black;
+    background-color: blue;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.myfristbox {
+    @extend %box2;
+
+}
+
+@mixin baseButton($bgColor){
+padding: 10px 20px;
+display: inline-block;
+text-transform: uppercase;
+
+background-color: $bgColor;
+outline: 1px solid $bgColor;
+box-shadow: 0 0 10px $bgColor;
+
+color:  white;
+border: 1px solid white;
+&:hover{
+    color: $bgColor;
+    background: white;
+    box-shadow: none;
+}
+
+}
+
+button.green{
+    @include baseButton(green);
+}
+
+$template: dark;
+
+$bg-dark:#000;
+$fg-dark: #999;
+$bg-bright: #eeee99;
+$fg-bright: #eeee99;
+
+
+@mixin colors {
+    @if $template == dark{
+        background-color: $bg-dark;
+        color: $bg-bright;
+    }
+    @if $template == bright{
+        background-color: $bg-bright;
+        color: $fg-dark;
+    }
+}
+
+body{
+    @include colors;
+}
+
+@if $template == dark{
+    body{
+        background-color: $bg-dark;
+        color: $bg-bright;
+    }
+
+}@else if $template == bright{
+    body{
+        background-color: $bg-bright;
+        color: $fg-dark;
+    }
+}@else{
+    body{
+        background-color: $bg-bright;
+        color: $fg-dark;
+    }
+}

@@ -9,37 +9,31 @@
 /*THEME*/
 body {
   font-family: "Roboto", sans-serif;
-  background-color: white;
-  color: black;
+  background-color: rgb(32, 32, 32);
+  color: white;
 }
-body .color-navbar {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
-}
-body body {
-  background-color: white;
+body #cards {
+  background-color: rgb(48, 48, 48);
 }
 body svg {
-  filter: none;
+  filter: invert(100%) sepia(0%) saturate(6278%) hue-rotate(294deg) brightness(109%) contrast(68%);
 }
 body footer {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+  box-shadow: 0 0 60px rgba(204, 204, 204, 0.171);
 }
 
 .color-navbar {
-  background-color: white;
-  color: black;
+  background-color: rgb(32, 32, 32);
+  color: white;
 }
-.color-navbar .color-navbar {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
-}
-.color-navbar body {
-  background-color: white;
+.color-navbar #cards {
+  background-color: rgb(48, 48, 48);
 }
 .color-navbar svg {
-  filter: none;
+  filter: invert(100%) sepia(0%) saturate(6278%) hue-rotate(294deg) brightness(109%) contrast(68%);
 }
 .color-navbar footer {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+  box-shadow: 0 0 60px rgba(204, 204, 204, 0.171);
 }
 
 header {
@@ -166,21 +160,18 @@ nav .activation {
 }
 
 footer {
-  background-color: white;
-  color: black;
+  background-color: rgb(32, 32, 32);
+  color: white;
   color: white;
 }
-footer .color-navbar {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
-}
-footer body {
-  background-color: white;
+footer #cards {
+  background-color: rgb(48, 48, 48);
 }
 footer svg {
-  filter: none;
+  filter: invert(100%) sepia(0%) saturate(6278%) hue-rotate(294deg) brightness(109%) contrast(68%);
 }
 footer footer {
-  background-image: linear-gradient(rgb(116, 57, 235), rgb(94, 26, 232));
+  box-shadow: 0 0 60px rgba(204, 204, 204, 0.171);
 }
 footer li {
   margin-top: 10px;

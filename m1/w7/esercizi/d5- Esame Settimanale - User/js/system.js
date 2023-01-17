@@ -43,7 +43,6 @@ function CreateCard(name, _email, linkimg, _subtitle, _info){
     card.append(subTitle);
     card.append(info);
     card.append(email);
-
     console.log(card);
 
 }

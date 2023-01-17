@@ -1,0 +1,26 @@
+<div class="">
+    <h1>Nuovo Utente</h1>
+    <div class="container">
+        <form action="row">
+            <div class="form-group">
+                <label for="text">Nome</label>
+                <input type="text" class="form-control" required name="nome" [(ngModel)]="newUser.frist_name">
+            </div>
+            <div class="form-group">
+                <label for="text">Cognome</label>
+                <input type="text" class="form-control" required name="Cognome" [(ngModel)]="newUser.last_name">
+            </div>
+            <button type="button" class="btn btn-primary" (click)="creaUtente()">Crea</button>
+        </form>
+        <hr>
+        <button type="button" class="btn btn-primary" (click)="recuperaUtenti()">Recupera Utenti</button>
+        <div class="row">
+            <ul class="list-group">
+                <li *ngFor="let user of users" class="list-group-item">id:{{user.id}}- nome: {{user.frist_name}}- Cognome: {{user.last_name}}- email: {{user.email}}-Imagine: <img src="{{user.avatar}}" alt="">
+                    <button type="button" class="btn btn-primary" (click)="CancellaUtente(user.id)">X</button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>

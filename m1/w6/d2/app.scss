@@ -1,0 +1,69 @@
+nav{
+    display: block;
+    ul{
+        display: inline;
+        background-color: aquamarine;
+    }
+}
+
+#main{
+    p{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    span{
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+    }
+
+}
+#main2 {
+    background-color: red;
+    div{
+        color: aqua;
+        .red{
+            color: green;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.esempio{
+    background-color: greenyellow;
+    h1{
+        color: gray;
+        .titolo{font-size: 52px;}
+    }
+}
+
+#pippo{
+    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+#main3{
+    color: black;
+    &-sidebar{
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+
+#main4{
+    font: {
+        family: Georgia;
+        size: 1.5em;
+        weight: bold;
+    }
+}
