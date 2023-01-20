@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div class="container-fluid d-flex flex-row flex-wrap">
+  <div class="card m-" style="width: 17rem;" *ngFor="let movie of movies; let i = index">
+    <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">{{movie.title}}ss</p>
+    </div>
+  </div>
+</div>
+
