@@ -19,9 +19,10 @@ public class Libro extends  Archivio{
 	}
 	
 	@Override
+//	public String toString() {
+//		return "Codice ISBM:"+ "	" + GetISBM() + "	" + "Titolo:"+ "	" + GetTitolo() + "	" + "Data:" + "	" + GetDataPubblicazione() + "	" + "Pagine:" +"	" + GetPagine()+ "	" + "Autore:" + "	" + autore + "	" + " Genere:" + "	" + genere +"";
+//	}
 	public String toString() {
-		return "Codice ISBM:"+ "	" + GetISBM() + "	" + "Titolo:"+ "	" + GetTitolo() + "	" + "Data:" + "	" + GetDataPubblicazione() + "	" + "Pagine:" +"	" + GetPagine()+ "	" + "Autore:" + "	" + autore + "	" + " Genere:" + "	" + genere +"";
-//		return "[Autore: " + autore + ", Genere: " + genere + "]";
+		return ""+GetISBM() + "	" + GetTitolo() + "	" + GetDataPubblicazione() +"	" + GetPagine()+ "	" + autore + "	"+ genere +"";
 	}
-	
 }

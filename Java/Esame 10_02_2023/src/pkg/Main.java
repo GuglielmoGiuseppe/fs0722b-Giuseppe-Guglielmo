@@ -2,7 +2,11 @@ package pkg;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.commons.io.FileUtils;
@@ -14,34 +18,33 @@ public class Main {
 	static ArrayList<Archivio> archivio = new ArrayList<Archivio>();
 	static File file = new File("archivio/lista.txt");
 	static Scanner sc = new Scanner(System.in);
+	static List<String> ListaLibri;
 
 	public static void main(String[] args) throws IOException{
-
+		List<String> list = FileUtils.readLines(file,"UTF-8");
+		ListaLibri = list;
+		ConvertListToArchivio(list);
 		Menu();
-//		Charset charset = Charset.defaultCharset();  
-//		Path filePath = new File("archivio/lista.txt").toPath();
-//		List<String> stringList = Files.readAllLines(filePath, charset);
-//		String[] stringArray = stringList.toArray(new String[]{});
-//		System.out.println(stringArray.toString());
+
 		
 	}
 
 	
-	static public void Menu() {
+	static public void Menu() throws NumberFormatException, IOException {
 		System.out.println("[0] Aggiungi Libro");
 		System.out.println("[1] Rimozione Libro Tramie ISBM");
 		System.out.println("[2] Ricerca ISBM");
 		System.out.println("[3] Ricerca per Anno di Pubblicazione");
 		System.out.println("[4] Ricerca per Autore");
 		System.out.println("[5] Caricamento del disco dell'archivio");
-		System.out.println("Lista Comandi: Quit");
+		System.out.println("[6] Vedi Lista Libri");
 		
 		String Imput = sc.nextLine();
-		ListInputMenu(Integer.parseInt(Imput),ValueQuit );
+		ListInputMenu(Integer.parseInt(Imput));
 	}
 	
 	
-	static public void ListInputMenu(int value, String exit) {
+	static public void ListInputMenu(int value) throws IOException {
 		
 		switch(value)
 		{
@@ -165,23 +168,70 @@ public class Main {
 				break;
 			case 5:
 				break;
+			case 6:
+				//MostraArchivio();
+				DebugArray();
+				break;
 				
 		}
 	}
 	
-	static public void CreaElementoLibro(int ISBM, String Titolo, String Data, int Pagine, String Autore, String Genere)
+	static public void CreaElementoLibro(int ISBM, String Titolo, String Data, int Pagine, String Autore, String Genere) throws IOException
 	{
 		Archivio NuvoLibro = new Libro(ISBM,Titolo, Data, Pagine, Autore, Genere);
 		archivio.add(NuvoLibro);
 		System.out.println("Agginto all'archio: "+ NuvoLibro.GetISBM() + " " + NuvoLibro.GetTitolo());
+		FileUtils.writeStringToFile(file, NuvoLibro.toString()+"\n", "UTF-8",true);
+	}
+	
+	static public void ConvertElementoLibro(int ISBM, String Titolo, String Data, int Pagine, String Autore, String Genere) throws IOException
+	{
+		Archivio NuvoLibro = new Libro(ISBM,Titolo, Data, Pagine, Autore, Genere);
+		archivio.add(NuvoLibro);
+	}
+	
+	static public void ConvertListToArchivio(List<String> list) throws IOException {
 		
+		int ISBM = 0;
+		String Titolo = null;
+		String Data = null;
+		int Pagine = 0;
+		String AUTORE = null;
+		String Genere = null;
+		
+		String[] Libro2 = null;
+		
+		for(int i = 0; i< list.size(); i++)
+		{
+			String[] Libro = list.get(i).split("	");
+			Libro2 = Libro;
+		}
+		
+		ISBM = Integer.parseInt(Libro2[0]); 
+		
+		Titolo = Libro2[1];
+		Data = Libro2[2];
+		Pagine = Integer.parseInt(Libro2[3]);
+		AUTORE = Libro2[4];
+		Genere = Libro2[5];
+		
+		ConvertElementoLibro(ISBM,Titolo,Data,Pagine,AUTORE,Genere);
 	}
 	
 	
-	static public void CreazioneLibro() {
-		
+	
+	static public void MostraArchivio() throws IOException {
+		List<String> list = FileUtils.readLines(file,"UTF-8");
+		for(int i = 0; i <list.size(); i++) {
+			System.out.println(list.get(i).toString());
+		}
 	}
 	
+	static public void DebugArray() throws IOException {
+		for(int i = 0; i <archivio.size(); i++) {
+			System.out.println(archivio.get(i).toString());
+		}
+	}
 	
 	static public void ImputControlCreazileLibro(int Value, String Error, String TitleImput)
 	{
