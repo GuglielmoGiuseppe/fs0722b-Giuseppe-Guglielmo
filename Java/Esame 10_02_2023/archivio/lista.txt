@@ -1,0 +1,37 @@
+Codice ISBM:	0	Titolo:	Belonging To The Ocean	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	1	Titolo:	Dead At A Storm	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
+Codice ISBM:	2	Titolo:	Breaking The North	Data:	15/02/2000	Pagine:	420	Autore:	Guglielmo	 Genere:	Shi-fi
+Codice ISBM:	3	Titolo:	Chasing The Immortals	Data:	15/02/1990	Pagine:	420	Autore:	Guglielmo	 Genere:	Thriller
+Codice ISBM:	4	Titolo:	Raised By The Mist	Data:	15/02/1980	Pagine:	420	Autore:	Guglielmo	 Genere:	Giallo
+Codice ISBM:	5	Titolo:	Escaping Nightmares	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Gotico
+Codice ISBM:	6	Titolo:	Dancing In Nightmares	Data:	15/02/2005	Pagine:	420	Autore:	Guglielmo	 Genere:	Apocalittico
+Codice ISBM:	7	Titolo:	Meeting In The East	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	8	Titolo:	Still Breathing In The Universe	Data:	15/02/2009	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
+Codice ISBM:	9	Titolo:	Begging In The Swamp	Data:	15/02/2008	Pagine:	420	Autore:	Guglielmo	 Genere:	Shi-fi
+Codice ISBM:	10	Titolo:	Mending The Demons	Data:	15/02/2002	Pagine:	420	Autore:	Guglielmo	 Genere:	Thriller
+Codice ISBM:	11	Titolo:	Bleeding At The Animals	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Giallo
+Codice ISBM:	12	Titolo:	Life At The Commander	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Gotico
+Codice ISBM:	13	Titolo:	Visiting The Shadows	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Apocalittico
+Codice ISBM:	14	Titolo:	Choking In History	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	15	Titolo:	Question The Universe	Data:	15/02/2000	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
+Codice ISBM:	16	Titolo:	Ending My End	Data:	15/02/1990	Pagine:	420	Autore:	Guglielmo	 Genere:	Shi-fi
+Codice ISBM:	17	Titolo:	Battle The Universe	Data:	15/02/1980	Pagine:	420	Autore:	Guglielmo	 Genere:	Thriller
+Codice ISBM:	18	Titolo:	Amusing The City	Data:	15/02/1970	Pagine:	420	Autore:	Guglielmo	 Genere:	Giallo
+Codice ISBM:	19	Titolo:	Hunting The Sun	Data:	15/02/1960	Pagine:	420	Autore:	Guglielmo	 Genere:	Gotico
+Codice ISBM:	20	Titolo:	Travel To The Sea	Data:	15/02/1950	Pagine:	420	Autore:	Guglielmo	 Genere:	Apocalittico
+Codice ISBM:	21	Titolo:	Battling In The Country	Data:	15/02/1940	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	22	Titolo:	Guarding Technology	Data:	15/02/1930	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
+Codice ISBM:	23	Titolo:	Shelter At The Slaves	Data:	15/02/2000	Pagine:	420	Autore:	Guglielmo	 Genere:	Shi-fi
+Codice ISBM:	24	Titolo:	Shelter At The Maze	Data:	15/02/1990	Pagine:	420	Autore:	Guglielmo	 Genere:	Thriller
+Codice ISBM:	25	Titolo:	Invited By The End	Data:	15/02/1980	Pagine:	420	Autore:	Guglielmo	 Genere:	Giallo
+Codice ISBM:	26	Titolo:	Growing In The Ships	Data:	15/02/1970	Pagine:	420	Autore:	Guglielmo	 Genere:	Gotico
+Codice ISBM:	27	Titolo:	Battling In The Sun	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Apocalittico
+Codice ISBM:	28	Titolo:	Going To The Fires	Data:	15/02/1940	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	29	Titolo:	Rescue In Secrets	Data:	15/02/1930	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
+Codice ISBM:	30	Titolo:	Pleasing The Mist	Data:	15/02/2000	Pagine:	420	Autore:	Guglielmo	 Genere:	Shi-fi
+Codice ISBM:	31	Titolo:	Punished By The East	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Thriller
+Codice ISBM:	32	Titolo:	Traces In The Depths	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Giallo
+Codice ISBM:	33	Titolo:	Life Beneath The Void	Data:	15/02/2010	Pagine:	420	Autore:	Guglielmo	 Genere:	Gotico
+Codice ISBM:	34	Titolo:	Crying In The Animals	Data:	15/02/2000	Pagine:	420	Autore:	Guglielmo	 Genere:	Apocalittico
+Codice ISBM:	35	Titolo:	Accepting The Dungeons	Data:	15/02/1990	Pagine:	420	Autore:	Guglielmo	 Genere:	Fantasy
+Codice ISBM:	36	Titolo:	Welcome To The Angels	Data:	15/02/2020	Pagine:	420	Autore:	Guglielmo	 Genere:	Noir
